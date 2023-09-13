@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/wp.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    float:center;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+    color: brown;
+    float:left;
+    text-align:left;
+    margin-top: 30px;
+}
+
+p{
+    color:black
+}
+
+p:hover{
+    background-color: rgb(226, 226, 255);
+    font-weight: bold;
+    text-align: end;
+}
+a{
+    color:rgb(223, 217, 217);
+    margin-left: 600px;
+   
+    float:center;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 3px solid black;
+}
+
+li{
+    margin-top: 300px;
+}

@@ -1,0 +1,267 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/wp.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.whole-page {
+    width:100%;
+    margin: 0 auto;
+}
+
+.logo img{
+    margin-top: 20px;
+    float: left;
+    size: 10px;
+    background-color: none;
+    width: 250px;
+}
+.logo h2{
+margin-top: 20px;
+    float: left;
+    size: 10px;
+    background-color: none;
+    width: 250px;
+}
+nav{
+    margin-top:-11px;
+    height: 100px;
+    width:100%;
+    background: rgb(97, 103, 105);
+    align-items:center;
+    justify-content: space-between;
+    content: '';
+    display: flex;
+    clear:both;
+    position: fixed;
+    top: 0;
+    left:0;
+    right:0;
+    z-index:1000;
+
+}
+
+nav ul{
+    margin:0;
+    padding:0;
+    display:flex;
+    float:left;
+    margin-right: 10px;
+}
+
+
+
+nav ul li{
+    margin-top:20px;
+    display:inline-block;
+    padding: 20px;
+
+    
+}
+
+nav .pass li{
+    margin-right: -10px;
+}
+nav .pass{
+    margin-right: 120px;
+    float:right;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-weight:bold;
+    font-size: 16px;
+
+}
+
+nav ul li i{
+    padding: 0 5px;
+    margin-top: 2px;
+    float:left;
+}
+
+nav .search{
+    margin-top: 20px;
+    width:215px;
+    height:35px;
+    background-color: rgba(245,245,245,0.8);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding:0px 10px;
+    margin-left: 40rem;
+    float:center;
+
+}
+
+nav .search input{
+    width:300px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent ;
+    font-family: 'Montserrat', sans-serif;
+    float:left;
+}
+
+nav ul ul{
+    margin-top:40px;
+    position: absolute;
+    top: 40px;
+    display:none;
+    align-items: center;
+}
+
+nav ul li:hover > ul{
+    display:block;
+}
+
+nav .first-sub .third-sub li{
+    margin:0;
+    padding:16px 9px 8px 2px;
+    width: 110px;
+    float: center;
+    text-align: center;
+    display: block;
+    margin-left: -40px;
+    background: rgb(97, 103, 105);
+    border: none; 
+}
+
+nav  .pass .second-sub li{
+    margin:0;
+    padding:16px 0px 8px 15px;
+    width: 110px;
+    float: center;
+    text-align: center;
+    display: block;
+    margin-left: -40px;
+    background: rgb(97, 103, 105);
+    border: none; 
+}
+nav ul ul li a{
+    font-size:15px;
+    font-weight:bold ;
+}
+
+nav .first-sub .third-sub i{
+    float: center;
+    margin-top: 3px;
+    margin-right: -3px;
+}
+
+nav .pass .second-sub i{
+    float: center;
+    margin-top: 3px;
+    margin-left: -10px;
+}
+
+nav .pass .second-sub{
+    margin-left: -6px;
+}
+
+nav ul ul .cast li{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+nav ul ul .cast2 li{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+nav .pass .second-sub i{
+    margin-right: -20px;
+}
+
+/* .content{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+} */
+
+.wrapper{
+    width:100%;
+    overflow: hidden;
+}
+
+.slides-container{
+    height: 650px;
+    position: relative;
+    transition: 800ms cubic-bezier(0.25, 0.46, 0.45, 0.94)
+}
+
+.slide-image{
+    width: 100%;
+    height:100%;
+    position:absolute;
+}
+
+.slide-image img{ 
+    margin-top: 95px;
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+
+.next-btn i,
+.prev-btn i{
+    color: rgb(0, 0, 0);
+}
+.next-btn,
+.prev-btn{
+    position:fixed;
+    padding:16px;
+    border: none;
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    font-size:40px;
+    z-index: 100;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+
+.next-btn i:hover,
+.prev-btn i:hover{
+    color: rgb(179, 22, 22);
+}
+
+.prev-btn{
+    left:0;
+
+}
+.next-btn{
+    right:0;
+}
+
+.navigation-dots{
+    display: flex;
+    height:32px;
+    align-items: center;
+    justify-content: center;
+    margin:10px 0;
+}
+
+.single-dot{
+    background: #332c2c;
+    height:16px;
+    width:16px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    cursor:pointer;
+    transition: 400ms;
+}
+
+.single-dot.active{
+    background: #eee;
+} 
